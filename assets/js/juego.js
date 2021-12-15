@@ -8,7 +8,7 @@ const miModulo = (() => {
     let puntosJugadores = [];
 
 
-    // Referencias del HTML
+    // Referencias del HTML (Botones del Juego)
     const btnPedir = document.querySelector('#btnPedir'),
         btnDetener = document.querySelector('#btnDetener'),
         btnNuevo = document.querySelector('#btnNuevo');
@@ -34,7 +34,7 @@ const miModulo = (() => {
 
     }
 
-    // Esta función crea un nuevo deck
+    // Esta función crea un nuevo deck (Baraja Nueva)
     const crearDeck = () => {
 
         deck = [];
@@ -52,7 +52,7 @@ const miModulo = (() => {
         return _.shuffle(deck);;
     }
 
-    // Esta función me permite tomar una carta
+    // Esta función me permite tomar una carta (Juego en Marcha)
     const pedirCarta = () => {
         if (deck.length === 0) {
             throw 'No hay cartas en el deck';
@@ -101,7 +101,7 @@ const miModulo = (() => {
 
     }
 
-    // turno de la computadora
+    // Turno de la computadora (Automático)
     const turnoComputadora = (puntosMinimos) => {
 
         let puntosComputadora = 0;
@@ -118,7 +118,7 @@ const miModulo = (() => {
 
 
 
-    // Eventos
+    // Eventos en el Juego
     btnPedir.addEventListener('click', () => {
 
         const carta = pedirCarta();
@@ -150,13 +150,7 @@ const miModulo = (() => {
         turnoComputadora(puntosJugadores[0]);
     });
 
-    // btnNuevo.addEventListener('click', () => {
-
-    //     inicializarJuego();
-
-    // });
-
-
+    
     return {
         nuevoJuego: inicializarJuego
     };

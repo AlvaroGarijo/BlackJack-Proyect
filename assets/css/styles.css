@@ -1,42 +1,45 @@
-html,body {
+html,
+body {
     margin: 0px;
     min-height: 100%;
-    background: rgb(0,255,85);
-    background: radial-gradient(circle, rgba(0,255,85,1) 0%, rgba(9,121,20,1) 49%, rgba(0,36,11,0.8883928571428571) 80%);
+    background: rgb(0, 255, 85);
+    background: radial-gradient(circle, rgba(0, 255, 85, 1) 0%, rgba(9, 121, 20, 1) 49%, rgba(0, 36, 11, 0.8883928571428571) 80%);
 }
-body{
+
+body {
     margin-bottom: 40px;
 }
 
-.titulo{
+.titulo {
     height: 250px;
     text-align: center;
-    background: rgb(156,156,156);
-    background: radial-gradient(circle, rgba(156,156,156,1) 0%, rgba(42,42,42,1) 49%, rgba(0,0,0,1) 80%);
+    background: rgb(156, 156, 156);
+    background: radial-gradient(circle, rgba(156, 156, 156, 1) 0%, rgba(42, 42, 42, 1) 49%, rgba(0, 0, 0, 1) 80%);
     color: rgb(0, 31, 1);
-    border-bottom:2px solid rgb(184, 183, 183);
-
-
+    border-bottom: 2px solid rgb(184, 183, 183);
 }
-.black{
-    padding: 50px;;
+
+.black {
+    padding: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 100px;
 }
-.col{
+
+.col {
     text-align: center;
     width: 100%;
 }
-.carta{
+
+.carta {
     width: 150px;
     position: relative;
-    left:100px;
+    left: 100px;
     margin-left: -75px;
-    
+
 }
 
-#computadora-cartas, #jugador-cartas{
-height: 300px;
-  
-}
+#computadora-cartas,
+#jugador-cartas {
+    height: 300px;
 
+}
